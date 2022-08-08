@@ -18,6 +18,10 @@ int main(int argc, char *argv[])
       assert(false);
     case 4:
       throw("exception");
+    case 5:
+      std::abort();
+    case 6:
+      return 1/0;
     default:
       return 0;
   }
